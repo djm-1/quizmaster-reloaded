@@ -1,0 +1,13 @@
+.heading-1{
+    font-family: cursive;
+    font-weight: bolder;
+    color:#E73C73;
+    text-align: center;
+}
+.detail{
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    margin-bottom: 5%;
+    background-color: #e9ecef;
+}

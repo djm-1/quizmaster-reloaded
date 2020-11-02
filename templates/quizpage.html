@@ -1,0 +1,67 @@
+{% extends 'base.html'%}
+{% load  static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block head %}
+    <title>Contest Arena</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="{% static 'quizpage.css' %}">
+    <script src="{% static 'quizpage.js' %}"></script>
+    {% endblock %}
+</head>
+<body>
+    {% block content %}
+    <!-- timer clock -->
+    <div class="timer" style="text-align: center;">
+        <h5>Time remaining</h5>
+        <h3 id="status"></h3>
+    </div>
+    
+    <form method="POST" id="myquiz">
+    {% csrf_token %}
+    {% for qn in quiz_obj %}
+    <div class="quizbox box_{{ forloop.counter }}">
+        <h5 class="heading">Question number {{forloop.counter}} of <span class="tot_{{ forloop.counter }}">{{total}}</span></h5>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bar_{{forloop.counter}}" role="progressbar" aria-valuenow=""  aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+
+        <div style="margin-top: 30px;">
+        <h2 style="margin-bottom: 15px;" class="heading">{{qn.question}}</h2>
+        <div class="option">
+            <div><input type="radio" name="{{qn.id}}" id="{{qn.id}}_opt_1" value="{{qn.option_1}}"><label for="{{qn.id}}_opt_1" class="btn btn-block btn-primary optbtn">{{qn.option_1}}</label></div>
+            <div><input type="radio" name="{{qn.id}}" id="{{qn.id}}_opt_2" value="{{qn.option_2}}"><label for="{{qn.id}}_opt_2" class="btn btn-block btn-primary optbtn">{{qn.option_2}}</label></div>
+            <div><input type="radio" name="{{qn.id}}" id="{{qn.id}}_opt_3" value="{{qn.option_3}}"><label for="{{qn.id}}_opt_3" class="btn btn-block btn-primary optbtn">{{qn.option_3}}</label></div>
+            <div><input type="radio" name="{{qn.id}}" id="{{qn.id}}_opt_4" value="{{qn.option_4}}"><label for="{{qn.id}}_opt_4" class="btn btn-block btn-primary optbtn">{{qn.option_4}}</label></div>
+        </div>
+        </div>
+    </div>
+    {% endfor %}
+<!-- prev and next button -->
+    <div class="butbox row">
+        <div class="col-6" style="text-align: left; padding-left:0;">
+            <button type="button" class="btn btn-primary prev">⇽ Previous</button>
+        </div>
+        <div class="col-6" style="text-align: right; padding-right:0;">
+            <button type="button" class="btn btn-primary next">Next ⇾</button>
+        </div>
+    </div>
+
+    <!-- submit button -->
+    <div class="sub">
+        <button type="submit" class="btn btn-danger">Finish quiz and submit</button>
+    </div>
+      
+   </form>
+   
+
+    {% endblock %}
+    
+</body>
+</html>

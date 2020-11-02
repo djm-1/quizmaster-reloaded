@@ -1,0 +1,49 @@
+.quizbox{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3%;
+    background-color: darkslategray;
+    /* background-color: thistle; */
+    margin-top: 3%;
+    border-radius: 15px;
+    box-shadow: 8px 8px 10px;
+}
+.timer{
+    margin-top: 2%;
+}
+.butbox{
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+.sub{
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+input[type="radio"]{
+    display: none;
+}
+
+
+/* stack overflow help */
+
+/* try the + symbol: It is Adjacent sibling combinator. 
+It combines two sequences of simple selectors having the same parent and 
+the second one must come IMMEDIATELY after the first. */
+
+input[type="radio"]:checked+label,
+.Checked+label {
+  background: #28a745;
+  color: white;
+}
+body{
+    background-color: #e9ecef;
+}
+.heading{
+    color: white;
+}

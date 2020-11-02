@@ -1,0 +1,59 @@
+.delete{
+   margin-right: 0px;
+}
+
+.qnbox{
+    margin-left: 15%;
+    margin-right: 15%;
+    border-radius: 20px;
+    background-color: darkslategray;
+    /* z-index: 1; */
+    box-shadow: 8px 8px 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+body{
+    background: linear-gradient(-45deg,#EE7752,#E73C73,#23A6D5,#23D5AB);
+    margin: 0;
+    width: 100%;
+}
+
+.form-control{
+    border-radius: 20px;
+}
+.btn-block{
+    background-color: white;
+    color: darkgreen;
+    font-weight: bolder;
+    border-color: white;
+    font-family: cursive;
+}
+.btn-block:hover{
+    color: white;
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.label{
+    color: white;
+    font-size: 15px;
+}
+.insbox{
+    border: 3px solid black;
+    border-radius: 10px;
+    border-style: dashed;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px;
+}
+/* copy pasted from stack overflow...LOLOL */
+@media (max-width: 768px) {
+    html, body {
+    width: auto !important;
+    overflow-x: hidden !important;
+    }
+    }
+
+
+

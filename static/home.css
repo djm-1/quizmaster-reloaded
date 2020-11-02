@@ -1,0 +1,13 @@
+.cont{
+    background-image: url('quiz.jpg');
+    background-size: 100%;
+    background-size: cover;
+}
+.headbox{
+    text-align: center;
+    color: white;
+    padding-top: 20%;
+}
+.pseudo{
+    padding-top: 20%;
+}

@@ -1,0 +1,28 @@
+.text-muted{
+    color: white !important;
+}
+body{
+    background-color: bisque;
+}
+.formbox{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid;
+    padding: 2%;
+    border-radius: 20px;
+    background-color:darkslategray;
+    color: white;
+    margin-bottom: 80px;
+}
+.sel{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.btn-block{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
