@@ -42,10 +42,10 @@ Users will have to create an account or sign-up first if they don't have one. Th
 * Sqlite3  
 
 ## Setting up the project in local machine
-Download or clone the repository into your local machine.
-Run `pip install -r requirements.txt` to install required modules.
-Run `python manage.py runserver` to run in test server in `http://127.0.0.1:8000/`.
-Run `python manage.py collectstatic` to set up static files.
-Run `python manage.py migrate` to set up database.
-Run `python manage.py createsuperuser`to create an admin user. You can visit the admin dashboard in `http://127.0.0.1:8000/admin/`.
-Boom! you are ready to go.
+* Download or clone the repository into your local machine.
+* Run `pip install -r requirements.txt` to install required modules.
+* Run `python manage.py runserver` to run in test server in `http://127.0.0.1:8000/`.
+* Run `python manage.py collectstatic` to set up static files.
+* Run `python manage.py migrate` to set up database.
+* Run `python manage.py createsuperuser`to create an admin user. You can visit the admin dashboard in `http://127.0.0.1:8000/admin/`.
+* Boom! you are ready to go.
