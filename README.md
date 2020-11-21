@@ -29,8 +29,9 @@ Users will have to create an account or sign-up first if they don't have one. Th
 
 * You can now see your score along with correct,unattempted,wrong answer statistics and your performance analysis per question.  
 
-* You may visit the leaderboard using the same contest ID.
+* You may visit the leaderboard using the same contest ID.  
 
+#### ID for sample contest : 1a7bc03e-4aa7-4be3-9a82-352b20f43f33
 ## Technology used
 * HTML
 * CSS
