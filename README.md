@@ -49,3 +49,14 @@ Users will have to create an account or sign-up first if they don't have one. Th
 * Run `python manage.py migrate` to set up database.
 * Run `python manage.py createsuperuser`to create an admin user. You can visit the admin dashboard in `http://127.0.0.1:8000/admin/`.
 * Boom! you are ready to go.
+
+## ❤️ Thanks to our awesome contributors ✨✨
+<table>
+  <tr>
+    <td>
+      <a href="https://github.com/djm-1/quizmaster-reloaded/graphs/contributors">
+        <img src="https://contrib.rocks/image?repo=djm-1/quizmaster-reloaded" />
+      </a>
+     </td>
+  </tr>
+</table>
